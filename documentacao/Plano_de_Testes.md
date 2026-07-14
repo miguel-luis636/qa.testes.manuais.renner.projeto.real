@@ -32,7 +32,6 @@ Este documento define a estratégia, o escopo, os critérios e os recursos utili
 | Carrinho de Compras | Adição, remoção, alteração de quantidade, cupom, persistência |
 | Simulação de Frete (CEP) | Cálculo de frete por CEP válido/inválido, opções de entrega |
 | Checkout  (sem conclusão da compra)| Identificação, endereço, resumo do pedido, seleção de forma de pagamento |
-| Responsividade | Comportamento básico em resolução mobile (via DevTools) |
 
 ### 3.2 Fora do escopo
 

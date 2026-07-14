@@ -113,21 +113,22 @@ Este projeto **não contempla**:
 qa-web-renner/
 │
 ├── README.md
-├── test-plan.md
-│
-├── test-cases/
-│   ├── cadastro-login.md
-│   ├── busca-e-filtros.md
-│   ├── pagina-produto.md
-│   ├── carrinho.md
-│   ├── frete-e-cep.md
-│   └── checkout.md
 │
 ├── bug-reports/
+│   └── bug.md
 │
-├── templates/
+├── documentacao/
+│   ├── Plano_de_Testes.md
+│   ├── Resultado_dos_Testes.md
+│   └── Cenarios_e_Casos_de_Teste/
+│       ├── cadastro-login.md
+│       ├── busca-e-filtros.md
+│       ├── pagina-produto.md
+│       ├── carrinho.md
+│       ├── frete-e-cep.md
+│       └── checkout.md
 │
-└── evidencias/
+└── metricas/
 ```
 
 ---
@@ -153,7 +154,7 @@ qa-web-renner/
 ## 🧭 Como Navegar Neste Repositório
 
 - Comece pelo [`documentacao/test-plan.md`](./test-plan.md) para entender escopo e estratégia
-- Veja os casos de teste em [`documentacao/test-cases/`](./test-cases), organizados por funcionalidade
+- Veja os casos de teste em [`documentacao/Cenarios_e_Casos_de_Teste/`](./test-cases), organizados por funcionalidade
 - Bugs encontrados durante a execução ficam documentados em `bug-reports/`, seguindo o template padrão
 - Evidências (prints) referenciadas nos casos de teste e bugs ficam em `evidencias/`
 

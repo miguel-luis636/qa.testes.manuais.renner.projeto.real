@@ -1,7 +1,9 @@
 # Heurísticas para Teste Exploratório
 
 **Projeto:** QA Web - Renner
-**Uso:** Guia de apoio para qualquer sessão de teste exploratório realizada no projeto, independentemente do módulo ou funcionalidade sendo explorada.
+
+**Uso:** Guia de apoio para qualquer sessão de teste exploratório realizada no projeto, 
+independentemente do módulo ou funcionalidade sendo explorada.
 
 ---
 

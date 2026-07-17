@@ -9,7 +9,7 @@ independentemente do módulo ou funcionalidade sendo explorada.
 
 ## 🧠 O que são heurísticas de teste?
 
-Heurísticas são "atalhos mentais" — guias práticos que ajudam o testador a lembrar de onde procurar problemas durante uma exploração livre, sem depender de um roteiro fixo de casos de teste. Elas não garantem cobertura completa, mas direcionam a atenção para áreas com maior probabilidade de esconder bugs.
+Heurísticas são "atalhos mentais" guias práticos que ajudam o testador a lembrar de onde procurar problemas durante uma exploração livre, sem depender de um roteiro fixo de casos de teste. Elas não garantem cobertura completa, mas direcionam a atenção para áreas com maior probabilidade de esconder bugs.
 
 ---
 

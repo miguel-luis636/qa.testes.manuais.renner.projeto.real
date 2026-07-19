@@ -55,21 +55,15 @@ Este projeto **não contempla**:
 ---
 
 ## 📊 Progresso dos Módulos Testados
-
 | Módulo | Casos de Teste | Status | Bugs Encontrados |
 |---|:---:|:---:|:---:|
-| Cadastro e Login | 0 | 🔲 Não iniciado | - |
-| Busca de Produtos | 0 | 🔲 Não iniciado | - |
-| Filtros e Ordenação | 0 | 🔲 Não iniciado | - |
-| Página de Produto | 0 | 🔲 Não iniciado | - |
-| Carrinho de Compras | 0 | 🔲 Não iniciado | - |
-| Simulação de Frete (CEP) | 0 | 🔲 Não iniciado | - |
-| Checkout (até pagamento) | 0 | 🔲 Não iniciado | - |
-
+| Cadastro e Login | 13 | 🟡 Em andamento | - |
+| Busca de Produtos | 11 | 🟡 Em andamento | - |
+| Filtros e Ordenação | 16 | 🟡 Em andamento | - |
+| Carrinho de Compras | 13 | 🟡 Em andamento | - |
+| Checkout (até pagamento) | 13 | 🟡 Em andamento | - |
 **Legenda:** 🔲 Não iniciado · 🟡 Em andamento · ✅ Concluído · ⚠️ Concluído com bugs
-
 > Esta tabela é atualizada conforme a execução avança. Cada módulo concluído deve linkar para seu arquivo de casos de teste correspondente em `/test-cases`.
-
 ---
 
 ## 🖥️ Ambiente de Testes

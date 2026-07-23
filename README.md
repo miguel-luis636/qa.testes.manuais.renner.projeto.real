@@ -19,7 +19,7 @@ O objetivo é demonstrar habilidades em planejamento, elaboração de casos de t
 Realizar testes funcionais manuais nas principais funcionalidades do e-commerce da Renner, documentando:
 
 - Plano de testes
-- Casos de teste 
+- Casos de teste
 - Evidências de execução
 - Bugs encontrados (quando aplicável), com severidade e prioridade classificadas
 
@@ -55,15 +55,21 @@ Este projeto **não contempla**:
 ---
 
 ## 📊 Progresso dos Módulos Testados
+
 | Módulo | Casos de Teste | Status | Bugs Encontrados |
 |---|:---:|:---:|:---:|
-| Cadastro e Login | 13 | 🟡 Em andamento | - |
-| Busca de Produtos | 11 | 🟡 Em andamento | - |
-| Filtros e Ordenação | 16 | 🟡 Em andamento | - |
-| Carrinho de Compras | 13 | 🟡 Em andamento | - |
-| Checkout (até pagamento) | 13 | 🟡 Em andamento | - |
-**Legenda:** 🔲 Não iniciado · 🟡 Em andamento · ✅ Concluído · ⚠️ Concluído com bugs
-> Esta tabela é atualizada conforme a execução avança. Cada módulo concluído deve linkar para seu arquivo de casos de teste correspondente em `/test-cases`.
+| Cadastro e Login | 13 | ⚠️ Concluído com achados | 2 melhorias (MELHORIA-001, MELHORIA-002) |
+| Busca de Produtos | 11 | ⚠️ Concluído com achados |  |
+| Carrinho de Compras | 13 | ⚠️ Concluído com achados |  |
+| Checkout (até pagamento) | 13 | ✅ Concluído | - |
+| Filtros e Ordenação | 16 | ✅ Concluído | - |
+
+
+**Legenda:** 🔲 Não iniciado · 🟡 Em andamento · ✅ Concluído · ⚠️ Concluído com achados
+
+> Resultado geral consolidado (módulos 1 a 5): **98,4% de taxa de sucesso** sobre 61 casos executados, 3 bugs e 2 melhorias identificados, nenhum de severidade crítica ou alta. Ver [`documentacao/Resultado_dos_Testes.md`](./documentacao/Resultado_dos_Testes.md) para o detalhamento completo.
+> Esta tabela é atualizada conforme a execução avança. Cada módulo concluído linka para seu arquivo de casos de teste correspondente em `documentacao/Cenarios_e_Casos_de_Teste/`.
+
 ---
 
 ## 🖥️ Ambiente de Testes
@@ -92,12 +98,12 @@ Este projeto **não contempla**:
 
 ## 🔍 Metodologia
 
-1. **Planejamento** — definição de escopo, riscos e critérios em `test-plan.md`
-2. **Elaboração dos casos de teste** — cenários escritos em Gherkin, cobrindo caminho feliz, caminhos alternativos e casos de borda
+1. **Planejamento** — definição de escopo, riscos e critérios em `documentacao/Plano_de_Testes.md`
+2. **Elaboração dos casos de teste** — cenários formais (módulos 1 a 5) e sessões exploratórias guiadas por heurísticas (módulos 6 e 7), cobrindo caminho feliz, caminhos alternativos e casos de borda
 3. **Execução manual** — navegação real no site, seguindo os cenários definidos
 4. **Registro de evidências** — prints das telas relevantes, salvos em `/evidencias`
-5. **Reporte de bugs** — sempre que um cenário falha, é gerado um relatório padronizado em `/bug-reports`, com severidade e prioridade
-6. **Atualização de progresso** — a tabela de progresso é atualizada a cada módulo concluído
+5. **Reporte de bugs e melhorias** — sempre que um cenário falha ou revela um ponto de UX a melhorar, é gerado um relatório padronizado em `/bug-reports`, com severidade/prioridade (bugs) ou prioridade sugerida (melhorias)
+6. **Atualização de progresso** — a tabela de progresso é atualizada a cada módulo concluído, com base nas métricas consolidadas em `documentacao/Resultado_dos_Testes.md`
 
 ---
 
@@ -109,20 +115,26 @@ qa-web-renner/
 ├── README.md
 │
 ├── bug-reports/
-│   └── bug.md
+
 │
 ├── documentacao/
 │   ├── Plano_de_Testes.md
 │   ├── Resultado_dos_Testes.md
 │   └── Cenarios_e_Casos_de_Teste/
-│       ├── cadastro-login.md
-│       ├── busca-e-filtros.md
-│       ├── pagina-produto.md
-│       ├── carrinho.md
-│       ├── frete-e-cep.md
-│       └── checkout.md
+│       ├── 1.0 Cadastro e Login.md
+│       ├── 2.0 Busca de Produtos.md
+│       ├── 3.0 Carrinho de Compras.md
+│       ├── 4.0 Checkout (sem conclusão da compra).md
+│       ├── 5.0 Filtros e Ordenação.md
+│       └── Teste-Exploratorio.md
 │
-└── metricas/
+├── metricas/
+│   ├── 1.0 Cadastro e Login.md
+│   ├── 2.0 Busca de Produtos.md
+│   ├── 3.0 Carrinho de Compras.md
+│   ├── 4.0 Checkout.md
+│   └── 5.0 Filtros e Ordenação.md
+
 ```
 
 ---
@@ -147,9 +159,11 @@ qa-web-renner/
 
 ## 🧭 Como Navegar Neste Repositório
 
-- Comece pelo [`documentacao/test-plan.md`](./test-plan.md) para entender escopo e estratégia
-- Veja os casos de teste em [`documentacao/Cenarios_e_Casos_de_Teste/`](./test-cases), organizados por funcionalidade
-- Bugs encontrados durante a execução ficam documentados em `bug-reports/`, seguindo o template padrão
+- Comece pelo [`documentacao/Plano_de_Testes.md`](./documentacao/Plano_de_Testes.md) para entender escopo e estratégia
+- Veja os casos de teste em [`documentacao/Cenarios_e_Casos_de_Teste/`](./documentacao/Cenarios_e_Casos_de_Teste), organizados por funcionalidade
+- Veja o resultado consolidado geral em [`documentacao/Resultado_dos_Testes.md`](./documentacao/Resultado_dos_Testes.md)
+- Métricas detalhadas por módulo ficam em `metricas/`
+- Bugs e melhorias encontrados durante a execução ficam documentados em `bug-reports/`, seguindo o template padrão
 - Evidências (prints) referenciadas nos casos de teste e bugs ficam em `evidencias/`
 
 ---
